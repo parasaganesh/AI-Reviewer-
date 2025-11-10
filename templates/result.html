@@ -23,12 +23,12 @@
       <h1>AI Reviewer – Results</h1>
       <pre>{{ summary }}</pre>
 
-      <div class="links">
-        <a class="btn" href="{{ url_for('download', path=review_file) }}">Download Review JSON</a>
-        <a class="btn" href="{{ url_for('download', path=docs_file) }}">Download Docs</a>
-        <a class="btn" href="{{ url_for('download', path=tests_file) }}">Download Tests</a>
-        <a class="btn" href="{{ url_for('download', path=report_file) }}">Download Final Report</a>
-      </div>
+     <div class="links">
+  <a class="btn" href="{{ url_for('download') }}?path={{ review_file }}">Download Review JSON</a>
+  <a class="btn" href="{{ url_for('download') }}?path={{ docs_file }}">Download Docs</a>
+  <a class="btn" href="{{ url_for('download') }}?path={{ tests_file }}">Download Tests</a>
+  <a class="btn" href="{{ url_for('download') }}?path={{ report_file }}">Download Final Report</a>
+</div>
 
       <div class="row">
         <a class="btn" style="background:#94a3b8;color:#0b1220" href="{{ url_for('back') }}">Analyze another repo</a>
