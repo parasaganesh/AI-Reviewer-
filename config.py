@@ -18,7 +18,7 @@ for folder in [DATA_DIR, LOG_DIR, DOCS_DIR, TESTS_DIR]:
     os.makedirs(folder, exist_ok=True)
 
 # ✅ Model and API setup
-AI_MODEL = "gemini-2.1-flash"
+AI_MODEL = "gemini-2.0-flash"
 API_KEY = os.getenv("GOOGLE_API_KEY")
 
 if not API_KEY:
