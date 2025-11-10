@@ -1,0 +1,34 @@
+[
+    {
+        "file": "data/repos\\requests\\setup.py",
+        "review": [
+            "\u2139\ufe0f File has no functions or classes. Might just be constants/configs."
+        ]
+    },
+    {
+        "file": "data/repos\\requests\\docs\\conf.py",
+        "review": [
+            "\u26a0\ufe0f File is large, consider splitting into smaller modules.",
+            "\u2139\ufe0f File has no functions or classes. Might just be constants/configs."
+        ]
+    },
+    {
+        "file": "data/repos\\requests\\docs\\_themes\\flask_theme_support.py",
+        "review": [
+            "\u2705 Code looks structured and manageable."
+        ]
+    },
+    {
+        "file": "data/repos\\requests\\src\\requests\\adapters.py",
+        "review": [
+            "\u26a0\ufe0f File is large, consider splitting into smaller modules.",
+            "\ud83d\udccc Too many functions in one file. Refactor recommended."
+        ]
+    },
+    {
+        "file": "data/repos\\requests\\src\\requests\\api.py",
+        "review": [
+            "\u2705 Code looks structured and manageable."
+        ]
+    }
+]

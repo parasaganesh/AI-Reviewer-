@@ -1,0 +1,14 @@
+[
+    {
+        "file": "data/repos\\EmployeeSalary_prediction\\app.py",
+        "review": [
+            "\u2139\ufe0f File has no functions or classes. Might just be constants/configs."
+        ]
+    },
+    {
+        "file": "data/repos\\EmployeeSalary_prediction\\model_training.py",
+        "review": [
+            "\u2139\ufe0f File has no functions or classes. Might just be constants/configs."
+        ]
+    }
+]

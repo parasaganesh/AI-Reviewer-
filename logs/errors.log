@@ -1,0 +1,35 @@
+[ERROR] Error generating tests for EmployeeSalary_prediction: 403 Your API key was reported as leaked. Please use another API key.
+[ERROR] Error generating tests for EmployeeSalary_prediction: 403 Your API key was reported as leaked. Please use another API key.
+[ERROR] Error generating tests for EmployeeSalary_prediction: 403 Your API key was reported as leaked. Please use another API key.
+[ERROR] Error generating tests for EmployeeSalary_prediction: 403 Your API key was reported as leaked. Please use another API key.
+[ERROR] Gemini failed for docs: 403 Your API key was reported as leaked. Please use another API key.
+[ERROR] ⚠️ OpenAI fallback also failed: 
+
+You tried to access openai.ChatCompletion, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+[ERROR] Gemini failed for tests: 403 Your API key was reported as leaked. Please use another API key.
+[ERROR] ⚠️ OpenAI fallback also failed: 
+
+You tried to access openai.ChatCompletion, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+[ERROR] Gemini failed for docs: 403 Your API key was reported as leaked. Please use another API key.
+[ERROR] ⚠️ OpenAI fallback also failed: You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+[ERROR] Gemini failed for tests: 403 Your API key was reported as leaked. Please use another API key.
+[ERROR] ⚠️ OpenAI fallback also failed: You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+[ERROR] Error generating tests for EmployeeSalary_prediction: 403 Your API key was reported as leaked. Please use another API key.
+[ERROR] Error generating tests for EmployeeSalary_prediction: 403 Your API key was reported as leaked. Please use another API key.
+[ERROR] Error generating tests for EmployeeSalary_prediction: 403 Your API key was reported as leaked. Please use another API key.
+[ERROR] ⚠️ Error generating docs: 404 models/gemini-2.1-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+[ERROR] ⚠️ Error generating tests: 404 models/gemini-2.1-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.

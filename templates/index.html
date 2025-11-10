@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>AI Reviewer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    :root { --bg:#0f172a; --card:#111827; --text:#e5e7eb; --accent:#22d3ee; }
+    body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,system-ui,Segoe UI,Roboto,Arial}
+    .wrap{max-width:720px;margin:10vh auto;padding:24px}
+    .card{background:var(--card);border-radius:18px;padding:24px;box-shadow:0 10px 30px rgba(0,0,0,.35)}
+    h1{margin:0 0 16px;font-size:28px}
+    p.lead{opacity:.8;margin:0 0 24px}
+    form{display:flex;gap:12px}
+    input[type=text]{flex:1;padding:14px 16px;border-radius:12px;border:1px solid #1f2937;background:#0b1220;color:var(--text)}
+    button{padding:14px 18px;border:0;border-radius:12px;background:var(--accent);color:#0b1220;font-weight:700;cursor:pointer}
+    .hint{margin-top:10px;opacity:.7;font-size:14px}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>AI Reviewer Dashboard</h1>
+      <p class="lead">Paste a GitHub repo URL. You’ll get a short summary plus downloads for Review, Docs, and Tests.</p>
+
+      <form action="{{ url_for('analyze') }}" method="post">
+        <input type="text" name="repo_url" placeholder="https://github.com/psf/requests" required>
+        <button type="submit">Analyze</button>
+      </form>
+
+      <div class="hint">Example: https://github.com/psf/requests</div>
+      <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+    </div>
+  </div>
+</body>
+</html>

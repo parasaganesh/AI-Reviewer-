@@ -1,0 +1,14 @@
+[
+    {
+        "file": "data/repos\\EmployeeSalary_prediction\\app.py",
+        "review": [
+            "ℹ️ No functions or classes; might be a script/config."
+        ]
+    },
+    {
+        "file": "data/repos\\EmployeeSalary_prediction\\model_training.py",
+        "review": [
+            "ℹ️ No functions or classes; might be a script/config."
+        ]
+    }
+]

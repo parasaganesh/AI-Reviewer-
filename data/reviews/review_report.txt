@@ -1,0 +1,12 @@
+AI Code Review Report
+
+File: data/repos\EmployeeSalary_prediction\app.py
+Lines: 64
+Functions: 0
+Classes: 0
+
+File: data/repos\EmployeeSalary_prediction\model_training.py
+Lines: 68
+Functions: 0
+Classes: 0
+

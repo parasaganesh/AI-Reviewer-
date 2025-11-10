@@ -1,0 +1,15 @@
+{
+    "repository": "EmployeeSalary_prediction",
+    "model": "gemini-2.1-flash",
+    "files_analyzed": [
+        {
+            "file": "data/repos\\EmployeeSalary_prediction\\app.py",
+            "lines": 64
+        },
+        {
+            "file": "data/repos\\EmployeeSalary_prediction\\model_training.py",
+            "lines": 68
+        }
+    ],
+    "generated_doc": "⚠️ Error generating docs: 404 models/gemini-2.1-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods."
+}
