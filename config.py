@@ -2,7 +2,8 @@ import os
 from dotenv import load_dotenv
 
 load_dotenv()
-
+DOCS_DIR = os.path.join(BASE_DIR, "docs")
+TESTS_DIR = os.path.join(BASE_DIR, "tests")
 # Use /tmp on Vercel for file storage
 BASE_DIR = "/tmp" if os.getenv("VERCEL_ENV") else os.path.dirname(os.path.abspath(__file__))
 DATA_DIR = os.path.join(BASE_DIR, "data")
