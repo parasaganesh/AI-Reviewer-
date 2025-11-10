@@ -2,7 +2,8 @@
 import os, json
 import google.generativeai as genai
 from dotenv import load_dotenv
-from config import DOCS_DIR, AI_MODEL, API_KEY, log_error
+from config import DATA_DIR as DOCS_DIR, AI_MODEL, API_KEY, log_error
+
 
 load_dotenv()
 
