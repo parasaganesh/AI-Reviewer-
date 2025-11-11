@@ -1,33 +1,32 @@
 import os
 from dotenv import load_dotenv
 
-# ✅ Load environment variables
 load_dotenv()
 
-# ✅ Define base directory (Render + local + Vercel compatible)
-BASE_DIR = "/tmp" if os.getenv("VERCEL_ENV") else os.path.dirname(os.path.abspath(__file__))
+# ✅ Base directory for Render
+BASE_DIR = "/tmp" if os.getenv("RENDER") else os.path.dirname(os.path.abspath(__file__))
 
-# ✅ Folder paths
+# ✅ Directories
 DOCS_DIR = os.path.join(BASE_DIR, "docs")
 TESTS_DIR = os.path.join(BASE_DIR, "tests")
 DATA_DIR = os.path.join(BASE_DIR, "data")
 LOG_DIR = os.path.join(BASE_DIR, "logs")
 
-# ✅ Ensure folders exist
-for folder in [DATA_DIR, LOG_DIR, DOCS_DIR, TESTS_DIR]:
+for folder in [DOCS_DIR, TESTS_DIR, DATA_DIR, LOG_DIR]:
     os.makedirs(folder, exist_ok=True)
 
-# ✅ Model and API setup
+# ✅ Model setup (public-friendly)
 AI_MODEL = "gemini-2.0-flash"
+
+# ✅ Safe API Key setup
 API_KEY = os.getenv("GOOGLE_API_KEY")
 
 if not API_KEY:
-    raise EnvironmentError("❌ GOOGLE_API_KEY not found. Please set it in Render Environment Variables.")
+    print("⚠️ Warning: GOOGLE_API_KEY missing. Public mode enabled — limited AI features.")
 
-# ✅ Logging setup
+# ✅ Logging
 LOG_FILE = os.path.join(LOG_DIR, "errors.log")
 
 def log_error(message: str):
-    """Simple error logger"""
     with open(LOG_FILE, "a", encoding="utf-8") as f:
         f.write(f"[ERROR] {message}\n")
